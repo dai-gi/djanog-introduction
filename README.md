@@ -70,16 +70,20 @@ python3 -m venv divenv
 - [**-m**](https://misprochef.com/posts/python-m-option/)：Pythonが持つモジュールを実行するためのオプション  
 - **venv**：仮想環境を作成するPythonの標準モジュール  
 <br>
-「.gitignore」ファイルを作成し、各ファイルをgitの管理化から外します。  
+「.gitignore」ファイルを作成し、各ファイルをgitの管理化から外します。 
+
 ```sh
 divenv
 db.sqlite3
 __pycache__
 ```
+
 仮想環境を実行します。  
+
 ```sh
 source divenv/bin/activate
 ```
+
 ターミナルに「divenv」と表示さていれば、仮想環境に内にいることになります。  
 <br/>
 <br/>
@@ -189,7 +193,7 @@ WEBサーバとAPサーバ間の通信を仲介する設定ファイル。
 仮想環境を管理するフォルダ。
 
 - **manage.py**  
-仮想環境を作成するPythonの標準モジュール
+Djangoアプリケーションを操作することができる実行ファイル。
 
 - **db.sqlite3**  
 SQLiteデータベースの実体。Djangoではデフォルトのデータベースとして設定されている。
